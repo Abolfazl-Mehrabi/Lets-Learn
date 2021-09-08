@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Learn!  |  HTML-CSS</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body style="background-color: rgb(7,7,7);">
+<!-- ------------------------------------------Header----------------------------------------- -->
+
+<section id="header">
+<div class="container-fluid" style="padding: 0rem;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top text-white">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">Let's Learn!</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Latest Cources</a></li>
+                  <li><a class="dropdown-item" href="#">Best Seller</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="form-switch d-flex text-white mx-4">
+              <input class="form-check-input mx-2 checkbox" type="checkbox" id="flexSwitchCheckChecked" checked onclick="getValue()">
+              <label class="form-check-label theme-switch" for="flexSwitchCheckChecked">Dark Mode</label>
+            </form>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="search-btn btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+</div><br>
+</section>
+
+<!-- ------------------------------------------Body-------------------------------------- -->
+
+<section id="body">
+<div class="container-fluid">
+    <div class="row">
+        <div id="content" class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+            <div id="testimonials-carousel" class="carousel-div carousel slide" data-bs-ride="carousel" data-bs-interval="2500" data-bs-pause="hover">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div> 
+                <div class="carousel-inner">
+                  <div class="carousel-item active text-center">
+                      <img class="w-75 rounded-3" src="img/jquery.jpg" alt="dog-profile">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Lets Learn jQuery !</h5>
+                      </div>
+                  </div>
+                  <div class="carousel-item text-center">
+                     <img class="w-75 rounded-3" src="img/react.jpg" alt="lady-profile">
+                     <div class="carousel-caption d-none d-md-block">
+                        <h5>Lets Learn React.Js !</h5>
+                      </div>
+                  </div>
+                </div>
+          
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon rounded-3" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon rounded-3" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <br>
+              <div class="item-container row text-white m-auto">
+                  <div class="item-div col-md-6 bg-dark m-1">
+                  <a href="html&css.html" target="_blank"><img class="head-img w-100" src="img/html-css.jpg" alt=""></a> 
+                   <a href="html&css.html"><div class="card-body">
+                    <h3>How to learn HTML & CSS ?</h3>
+                    <p class="card-text">Become a full-stack web developer with just one course. HTML, CSS, Javascript, Node, React, MongoDB and more!</p>
+                  </div></a>
+                </div>
+                <div class="item-div col-md-6 bg-dark m-1"> 
+                  <img class="head-img w-100" src="img/ios.jpg" alt="">
+                  <div class="card-body">
+                    <h3>How to learn Swift?</h3>
+                    <p class="card-text">From Beginner to iOS App Developer with Just One Course! Fully Updated with a Comprehensive Module Dedicated to SwiftUI!</p>
+                  </div>
+                </div>
+                <div class="item-div col-md-6 bg-dark m-1">
+                  <img class="head-img w-100" src="img/js.jpg" alt="">
+                  <div class="card-body">
+                    <h3>How to learn Js?</h3>
+                    <p class="card-text">The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. Many courses in one!</p>
+                  </div>
+                </div>
+                <div class="item-div col-md-6 bg-dark m-1">
+                  <img class="head-img w-100" src="img/flutter.jpg" alt="">
+                  <div class="card-body">
+                    <h3>How to learn Flutter?</h3>
+                    <p class="card-text">Officially created in collaboration with the Google Flutter team.</p>
+                  </div>
+                </div>
+              </div>
+        </div><br><br>
+        <!------ -------------------------------- -->
+        <div id="sidebar" class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="card-header bg-secondary text-white">Login To Your Account</div>
+                <div class="card-body text-black">
+                    <form action="https://google.com">
+                    <h5>Your Email</h5>
+                    <input class="w-100 rounded border-dark form-control" type="email" placeholder="Email" required><br>
+                    <h5>Your Password</h5>
+                    <input class="w-100 rounded border-dark form-control" type="password" placeholder="Password" required><br>
+                    <input class="form-check-input" type="checkbox" id="remember-me">
+                    <label class="form-check-label" for="remember-me">  Remember Me </label><br><br>
+                    <button class="submit-btn btn btn-lg btn-success" type="submit">Log in</button>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <div class="list-group">
+                <button type="button" class="list-group-header list-group-item list-group-item-action active bg-secondary fw-bolder border-white" aria-current="true">
+                    News </button>
+                <button type="button" class="list-group-item list-group-item-action">
+                    Sports </button>
+                <button type="button" class="list-group-item list-group-item-action">
+                    lorem </button>
+                <button type="button" class="list-group-item list-group-item-action">
+                    Lorem ipsum </button>
+              </div>
+              <br>
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Latest Published Cources</h5>
+                    <small>3 days ago</small>
+                  </div>
+                  <p class="mb-1">Some placeholder content in a paragraph.</p>
+                  <small>And some small print.</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Most Popular Cources</h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <p class="mb-1">Some placeholder content in a paragraph.</p>
+                  <small class="text-muted">And some muted small print.</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Best Seller Cources</h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <p class="mb-1">Some placeholder content in a paragraph.</p>
+                  <small class="text-muted">And some muted small print.</small>
+                </a>
+              </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- ---------------------------------Footer------------------------------------------------ -->
+
+<section id="footer">
+<div class="container-fluid text-white">
+  <div class="row">
+    <div class="group1 col-lg-3 col-md-6">
+      <h5 class="title-footer">Content</h5>
+      <hr>
+      <p>About</p>
+      <p>What We Offer</p>
+      <p>Leadership</p>
+      <p>Careers</p>
+      <p>Catalog</p>
+      <p>Degrees</p>
+    </div>
+    <div class="group2 col-lg-3 col-md-6">
+      <h5 class="title-footer">Community</h5>
+      <hr>
+      <p>Learners</p>
+      <p>Partners</p>
+      <p>Developers</p>
+      <p>Blog</p>
+      <p>Teachers Center</p>
+    </div>
+    <div class="group3 col-lg-3 col-md-6">
+      <h5 class="title-footer">More</h5>
+      <hr>
+      <p>Press</p>
+      <p>Terms</p>
+      <p>Help</p>
+      <p>Articles</p>
+      <p>Privacy</p>
+    </div>
+    <div class="group4 col-lg-3 col-md-6">
+      <h5 class="title-footer">Social Media</h5>
+      <hr>
+      <p>Join Us!</p>
+      <i class="fab fa-facebook-square fa-2x"></i>
+      <i class="fab fa-twitter-square fa-2x"></i>
+      <i class="fab fa-instagram-square fa-2x"></i>
+      <i class="fab fa-linkedin fa-2x"></i>
+      <i class="fab fa-youtube-square fa-2x"></i>
+
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- -------------------------------------------------------------------------------------- -->
+<script src="https://kit.fontawesome.com/1bd5a2332f.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
