@@ -12,6 +12,10 @@ function getValue () {
         $(".item-div").addClass("bg-dark").removeClass("bg-light")
         $(".carousel-control-prev-icon").removeClass("bg-dark")
         $(".carousel-control-next-icon").removeClass("bg-dark")
+        $(".content-body").addClass("bg-dark").removeClass("bg-light")
+        $(".content-div").removeClass("text-black").addClass("text-white").addClass("border-warning").removeClass("border-primary")
+        $(".course-content-open-btn").removeClass("btn-warning").addClass("btn-outline-success")
+        $(".course-content-close-btn").removeClass("btn-warning").addClass("btn-outline-success")
         //--------------- Body-Sidebar---------
         $(".submit-btn").addClass("btn-success").removeClass("btn-warning")
         $(".card-header").addClass("bg-secondary")
@@ -29,6 +33,10 @@ function getValue () {
         $(".item-div").removeClass("bg-dark").addClass("bg-light")
         $(".carousel-control-prev-icon").addClass("bg-dark")
         $(".carousel-control-next-icon").addClass("bg-dark")
+        $(".content-body").removeClass("bg-dark").addClass("bg-light")
+        $(".content-div").removeClass("text-white").addClass("text-black").removeClass("border-warning").addClass("border-primary")
+        $(".course-content-open-btn").removeClass("btn-outline-success").addClass("btn-warning")
+        $(".course-content-close-btn").removeClass("btn-outline-success").addClass("btn-warning")
         //--------------- Body-Sidebar---------
         $(".submit-btn").removeClass("btn-success").addClass("btn-warning")
         $(".card-header").removeClass("bg-secondary").css("backgroundColor","#185ADB")
@@ -39,6 +47,13 @@ function getValue () {
 }
 
 
-
-
-
+function openContent() {
+    if ($(".course-content-hidden").hasClass("hidden")) {
+        $(".course-content-hidden").removeClass("hidden").addClass("unhidden")
+        $(".course-content-open-btn").css("display","none")
+        $(".course-content-close-btn").removeClass("hidden")
+    } else{
+        $(".course-content-hidden").removeClass("unhidden").addClass("hidden")
+        $(".course-content-open-btn").css("display","inline-block")
+    }
+}
