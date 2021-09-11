@@ -18,7 +18,7 @@
 <div class="container-fluid" style="padding: 0rem;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top text-white">
         <div class="container-fluid">
-          <a class="navbar-brand fw-bold" href="#">Let's Learn!</a>
+          <a class="navbar-brand fw-bold" href="Home.html">Let's Learn!</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -89,38 +89,138 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-              <br>
-              <div class="item-container row text-white m-auto">
-                  <div class="item-div col-md-6 bg-dark m-1">
-                  <a href="html&css.html" target="_blank"><img class="head-img w-100" src="img/html-css.jpg" alt=""></a> 
-                   <a href="html&css.html"><div class="card-body">
-                    <h3>How to learn HTML & CSS ?</h3>
-                    <p class="card-text">Become a full-stack web developer with just one course. HTML, CSS, Javascript, Node, React, MongoDB and more!</p>
-                  </div></a>
-                </div>
-                <div class="item-div col-md-6 bg-dark m-1"> 
-                  <img class="head-img w-100" src="img/ios.jpg" alt="">
-                  <div class="card-body">
-                    <h3>How to learn Swift?</h3>
-                    <p class="card-text">From Beginner to iOS App Developer with Just One Course! Fully Updated with a Comprehensive Module Dedicated to SwiftUI!</p>
+              <br><br>
+              <div class="all-item-container">
+                  <div class="content-div w-75 card m-auto border-warning bg-dark text-white">
+                    <img class="card-img-top w-100" src="img/Html-css-2.png" alt="">
+                    <div class="card-body content-body">
+                      <h4 class="ms-1"><i class="fas fa-check"></i> Become a full-stack web developer with just one course. HTML, CSS, Javascript, Node, React, MongoDB and more!</h4><br>
+                      <div class="properties-text">
+                        <p class="card-text"><i class="fas fa-poll"></i>  Rating: 4.7 out of 5 ( 147,616 ratings ; 466,325 students )</p>
+                        <p class="card-text"><i class="fas fa-exclamation-circle"></i> Last update : 1/2021</p>
+                        <p class="card-text"><i class="fas fa-globe"></i> Language : English</p>
+                        <p class="card-text"><i class="fas fa-closed-captioning"></i> Subtitle is available in : English , German [Auto] , Italian [Auto]</p>
+                        <br><br>
+                      </div>
+                      <div class="properties-table">
+                        <table style="border-collapse: separate; border-spacing: 15px;">
+                          <tr>
+                            <td><i class="fas fa-poll"></i>  Rating:</td>
+                            <td>4.7 out of 5 ( 147,616 ratings ; 466,325 students )</td>
+                          </tr>
+                          <tr>
+                            <td><i class="fas fa-exclamation-circle"></i> Last update :</td>
+                            <td>1/2021</td>
+                          </tr>
+                          <tr>
+                            <td><i class="fas fa-globe"></i> Language :</td>
+                            <td>English</td>
+                          </tr>
+                          <tr>
+                            <td><i class="fas fa-closed-captioning"></i> Subtitle available in :</td>
+                            <td> English , German [Auto] , Italian [Auto]</td>
+                          </tr>
+                          <tr>
+                            <td><i class="fas fa-chalkboard-teacher"></i> Instructor :</td>
+                            <td><a href="https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e"><u>Dr.Angela Yu</u></a></td>
+                          </tr>
+                        </table>
+                      </div>
+                      <br>
+                      <h5 class="ms-1">This course includes:</h5>
+                      <table class="ms-1" style="border-collapse: separate; border-spacing: 7px;">
+                        <tr>
+                          <td><i class="fas fa-file-video"></i></td>
+                          <td>54.5 hours on-demand video</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-file"></i></td>
+                          <td>80 articles</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-download"></i></td>
+                          <td>21 downloadable resources</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-code"></i></td>
+                          <td>8 coding exercises</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-infinity"></i></td>
+                          <td>Full lifetime access</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-mobile"></i></td>
+                          <td>Access on mobile and TV</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-trophy"></i></td>
+                          <td>Certificate of completion</td>
+                        </tr>
+                      </table>
+
+                      <br>
+
+                      <div class="ms-1">
+                        <h5 class="course-content-header">Course content</h5>
+                        <div>
+                          <div class="course-content-visiable">
+                          <li>Front-End Web Development</li>
+                          <li>Introduction to HTML</li>
+                          <li>Intermediate HTML</li>
+                          <li>Introduction to CSS</li>
+                          <li>Introduction to Bootstrap 4</li>
+                          <li>Intermediate Bootstrap</li>
+                          <button class="course-content-open-btn btn btn-sm btn-outline-success my-1" onclick="openContent();">View More ...</button>
+                          </div>
+                          <div class="course-content-hidden hidden">
+                          <li>Web Design School - Create a Website that People Love</li>
+                          <li>Introduction to Javascript ES6</li>
+                          <li>Intermediate Javascript</li>
+                          <li>The Document Object Model (DOM)</li>
+                          <li>Boss Level Challenge 1 - The Dicee Game</li>
+                          <li>Advanced Javascript and DOM Manipulation</li>
+                          <li>jQuery</li>
+                          <li>Boss Level Challenge 2 - The Simon Game</li>
+                          <li>The Unix Command Line</li>
+                          <li>Backend Web Development</li>
+                          <li>Node.js</li>
+                          <li>Express.js with Node.js</li>
+                          <li>APIs - Application Programming Interfaces</li>
+                          <li>Git, Github and Version Control</li>
+                          <li>EJS</li>
+                          <li>Boss Level Challenge 3 - Blog Website</li>
+                          <li>Databases</li>
+                          <li>SQL</li>
+                          <li>MongoDB</li>
+                          <li>Mongoose</li>
+                          <li>Putting Everything Together</li>
+                          <li>Deploying Your Web Application</li>
+                          <li>Boss Level Challenge 4 - Blog Website Upgrade</li>
+                          <li>Build Your Own RESTful API From Scratch</li>
+                          <li>Authentication & Security</li>
+                          <li>React.js</li>
+                          <li>Bonus Module Ask Angela Anything</li>
+                          <li>Next Steps</li>
+                          <button class="course-content-close-btn btn btn-sm btn-outline-success hidden my-1" onclick="openContent();">View Less ...</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <br>
+
+                      <div class="mx-1 pricing-div row">
+                        <h1>€149.99</h1>
+                        <button class="col-lg-5 col-md-6 col-sm-12 btn btn-danger my-1"><a href="">Add To cart</a></button>
+                        <button class="col-lg-5 col-md-6 col-sm-12 btn btn-primary my-1"><a href="">Buy Now</a></button>
+                        <p class="text-white-50">30-Day Money-Back Guarantee</p>
+                      </div>
+                      <br>
+                    </div>
                   </div>
-                </div>
-                <div class="item-div col-md-6 bg-dark m-1">
-                  <img class="head-img w-100" src="img/js.jpg" alt="">
-                  <div class="card-body">
-                    <h3>How to learn Js?</h3>
-                    <p class="card-text">The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. Many courses in one!</p>
-                  </div>
-                </div>
-                <div class="item-div col-md-6 bg-dark m-1">
-                  <img class="head-img w-100" src="img/flutter.jpg" alt="">
-                  <div class="card-body">
-                    <h3>How to learn Flutter?</h3>
-                    <p class="card-text">Officially created in collaboration with the Google Flutter team.</p>
-                  </div>
-                </div>
-              </div>
-        </div><br><br>
+              </div>    
+        </div>
+        <br><br><br>
         <!------ -------------------------------- -->
         <div id="sidebar" class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
             <div class="card">
@@ -222,7 +322,6 @@
       <i class="fab fa-instagram-square fa-2x"></i>
       <i class="fab fa-linkedin fa-2x"></i>
       <i class="fab fa-youtube-square fa-2x"></i>
-
     </div>
   </div>
 </div>
