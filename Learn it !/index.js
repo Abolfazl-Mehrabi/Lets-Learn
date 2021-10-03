@@ -1,13 +1,12 @@
 var checked= false
 function getValue () {
-    
     if(checked) {
         //--------------- navbar ----------------
         $(".theme-switch").text("Dark Mode")
         $(".navbar").addClass("bg-dark").addClass("navbar-dark")
         $(".search-btn").addClass("btn-outline-success").removeClass("btn-outline-warning")
         //------------- Body-Content--------
-        $("#body").css("backgroundColor","rgb(7,7,7)")
+        $("#body").css("backgroundImage","url(img/Sprinkle-dark.svg)")
         $(".item-container").addClass("text-white")
         $(".item-div").addClass("bg-dark").removeClass("bg-light")
         $(".carousel-control-prev-icon").removeClass("bg-dark")
@@ -28,7 +27,7 @@ function getValue () {
         $(".navbar").removeClass("bg-dark").css("backgroundColor","#0A1931")
         $(".search-btn").removeClass("btn-outline-success").addClass("btn-outline-warning")
         //------------- Body-Content--------
-        $("#body").css("backgroundColor","#EFEFEF")
+        $("#body").css("backgroundImage","url(img/Sprinkle-light.svg)")
         $(".item-container").removeClass("text-white")
         $(".item-div").removeClass("bg-dark").addClass("bg-light")
         $(".carousel-control-prev-icon").addClass("bg-dark")
@@ -45,7 +44,6 @@ function getValue () {
         checked=true
     }
 }
-
 
 function openContent() {
     if ($(".course-content-hidden").hasClass("hidden")) {
