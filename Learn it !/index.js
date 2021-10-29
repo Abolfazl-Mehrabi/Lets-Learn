@@ -44,7 +44,6 @@ function getValue () {
         checked=true
     }
 }
-
 function openContent() {
     if ($(".course-content-hidden").hasClass("hidden")) {
         $(".course-content-hidden").removeClass("hidden").addClass("unhidden")
@@ -54,4 +53,7 @@ function openContent() {
         $(".course-content-hidden").removeClass("unhidden").addClass("hidden")
         $(".course-content-open-btn").css("display","inline-block")
     }
+}
+function loadfunc () {
+    $(".loader").css("display","none")
 }
